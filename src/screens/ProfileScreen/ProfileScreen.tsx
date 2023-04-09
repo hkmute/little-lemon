@@ -38,9 +38,6 @@ const ProfileScreen: React.FC = () => {
       aspect: [4, 3],
       quality: 1,
     });
-
-    console.log(result);
-
     if (!result.canceled) {
       setAvatar(result.assets[0].uri);
     }
